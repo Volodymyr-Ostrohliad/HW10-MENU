@@ -1,0 +1,66 @@
+#header {
+  display: inline-block;
+  background: rgb(5, 34, 116);
+  width: 100%;
+  min-height: 50px;
+  border-bottom: 15px solid black;
+}
+
+.container {
+text-align: center;
+}
+
+.menu {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 25px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu>li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu li {
+  background: rgb(5, 34, 116);
+  text-align: left;
+}
+
+.menu li:hover {
+  background: black;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  top: 100%;
+  display: none;
+  border: 2px solid rgb(5, 34, 116);
+}
+
+.menu ul ul {
+  top: 0;
+  left: 100%;
+  border: 2px solid rgb(5, 34, 116);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  }
